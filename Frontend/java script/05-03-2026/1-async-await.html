@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Async and Await</h2>
+    <p>to handle the promise in sync way</p>
+     
+    <script>
+     const fun4 =(message, time)=>{
+            return new Promise((resolved, rejected)=>{
+                setTimeout(()=>{
+                    resolved(message);
+                }, time);
+            })
+        }
+
+        // const getdata = async ()=>{
+        //     const data = await fun4("one", 1000);
+        //     console.log("data:", data);
+        //     const data1 = await fun4("two", 1000);
+        //     console.log("data1:", data1);
+        // }
+
+        const getdata = async ()=>{
+            try{
+            const data = await fun4("one", 1000);
+            console.log("data:", data);
+            const data1 = await fun4("two", 1000);
+            console.log("data1:", data1);
+            } catch (e){
+             console.log("error is:", e);
+            }
+        }
+        getdata();
+    </script>    
+</body>
+</html>

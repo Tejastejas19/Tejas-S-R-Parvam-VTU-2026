@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>innerText and teatContet and innerHTML</h3> 
+
+   <p id="p_tag1">Lorem ipsum dolor sit amet.</p>
+   <p id="p_tag2">Lorem ipsum dolor sit amet <span style="display: none;">consectetur</span> adipisicing.</p>
+
+   <script>
+    const frist =document.getElementById("p_tag1");
+    const second =document.getElementById("p_tag2");
+
+    //innerText
+    console.log("frist innerText:",frist.innerText);
+    console.log("second innerText:",second.innerText);
+
+    //innerContent
+    console.log("frist innerContet:",frist.innerContet);
+    console.log("second innerContet:",second.innerContet);
+
+    //innerHTML
+   </script>
+</body>
+</html>

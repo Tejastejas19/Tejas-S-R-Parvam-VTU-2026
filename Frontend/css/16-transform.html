@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            transform: translateX(200px);
+            transform: translateY(200px);
+            transform: translate(200px,200px);
+            transform: scaleX(1.5);
+            /* transform: translateX(200px,200px) scale(2);
+            transform: translate(200px,200px) scaleY(2); */
+            transform: rotate(25deg,35deg,60deg);
+            /* transform: rotate(35deg,40deg,50deg); */
+            /* transform: rotate3d(35deg, 20deg,45deg,60deg); */
+            transform: rotate3d(1,1,1,30deg);
+            transform: skew(70deg);
+            /* transform: skewX(30deg) skewY(50deg); */
+            /* transform: perspective(); after*/
+            transform: translate(400px,500px) scale(1,2) rotate(30deg,40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

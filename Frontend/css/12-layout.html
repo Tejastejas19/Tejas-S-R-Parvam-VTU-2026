@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-gap: 20px;
+            height: 600px;
+            font-size: 30px;
+            /* justify-content: center;
+            align-items: center; */
+            /* justify-items: center;
+            align-content: center;
+            width: 2000px; */
+           }
+        .bigbox1{
+            background-color: green;
+           grid-area: 1/1/4/2;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           /* justify-items: center;
+           align-content: center; */
+        }
+        .bigbox2{
+            background-color: green;
+            grid-area: 1/2/2/4;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .bigbox3{
+            background-color: red;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+         
+        }
+        .bigbox4{
+            background-color: yellow;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
+        .bigbox5{
+            background-color: red;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .bigbox6{
+            background-color: green;
+                grid-area: 2/4/4/5;
+                display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .bigbox7{
+            background-color: red;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+         .bigbox8{
+            background-color: yellow;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bigbox1"> 1</div>
+        <div class="bigbox2"> 2</div>
+        <div class="bigbox3"> 3</div>
+        <div class="bigbox4"> 4</div>
+        <div class="bigbox5"> 5</div>
+        <div class="bigbox6"> 6</div>
+        <div class="bigbox7"> 7</div>
+        <div class="bigbox8"> 8</div>
+    </div>
+</body>
+</html>

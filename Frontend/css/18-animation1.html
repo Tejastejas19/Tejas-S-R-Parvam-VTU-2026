@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-box{
+            width: 800px;
+            height: 200px;
+            border: 10px solid black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .inner-box{
+            width: 100px;
+            height: 100px;
+            animation-name: floatRotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .box1{
+            background-color: aquamarine;
+            animation-delay: 0.2s;
+        }.box2{
+            background-color: firebrick;
+             animation-delay: 0.4s;
+        }
+        .box3{
+            background-color:yellow;
+             animation-delay: 0.6s;
+        }
+        .box4{
+            background-color: gold;
+             animation-delay: 0.8s;
+        }
+        @keyframes floatRotate{
+            0%{
+                transform: translateY(0) rotate(0deg);           
+             }
+            25%{
+                transform: translateY(-20) rotate(45deg);
+             }
+              50%{
+                transform: translateY(0) rotate(90deg);
+             }
+              75%{
+                transform: translateY(-20) rotate(135deg);
+             }
+              100%{
+                transform: translateY(0) rotate(175deg);
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box box1"></div>
+         <div class="inner-box box2"></div>
+          <div class="inner-box box3"></div>
+           <div class="inner-box box4"></div>
+    </div>
+</body>
+</html>

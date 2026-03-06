@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+    <h1>Variables in javascript</h1>
+    <p>4 ways to create a Variables</p>
+    <h3>1. Automatically</h3>
+    <h3>2. var keyword</h3>
+    <h3>3. let keyword</h3>
+    <h3>4. const keyword</h3>
+
+    <script>
+        //Automatically
+        first_name = "jhon";
+        console.log("The first name is:", first_name)
+
+        //var
+        var last_name = "doe"
+        console.log("last name:", last_name)
+
+        //let
+        let age = 23
+        console.log("age:", age)
+
+        //const
+        const pi = 3.14;
+        console.log("pi:", pi)
+    </script>
+
+    <script>
+        //re declaring variables
+        var gander = 'm';
+        console.log("gender:", gander);
+        var gander = 'f';
+        console.log("gender:", gander);
+
+        let marks = 90;
+        console.log("marks", marks);
+
+        marks = 95;
+        console.log("marks", marks);
+
+        const country = "India";
+        console.log("country", country)
+        //const country="India";
+        console.log("country", country)
+
+        {
+            var city = "Bengalore";
+            console.log("city", city);
+        }
+        console.log("city", city);
+        {
+            let state = "Karnataka";
+            console.log("state", state);
+        }
+        
+        // console.log("state: ",state);
+        {
+            const state1 = "Karnataka";
+            console.log("state1", state1);
+            console.log("state1: ",state1);
+        }   
+    </script>
+</body>
+
+</html>
